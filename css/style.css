@@ -1,8 +1,21 @@
-.bodyGrid{
+nav{
+  display: flex;
+  background-color: white;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0px 5px 5px #EEEEEE;
+}
+
+.navGrid{
   display:grid;
-  margin: 20px 100px 0px 100px;
-  grid-template-rows: 90px auto;
+  margin: 10px 0px 0px 100px;
+  grid-template-rows: 90px;
   grid-template-columns: 150px auto;
+  padding: 5px;
 }
 
 .logo{
@@ -15,20 +28,19 @@
 .ld-logo{
   float: left;
   overflow: auto;
-  height: 90px;
+  height: 80px;
   cursor: pointer;
 
 }
 
 .navigationBar{
   /* border:1px solid  red; */
-  position: fixed;
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
-  display: flex;
+  /* display: flex; */
 }
 
-.nav{
+.navList{
   list-style-type: none;
   padding-left: 0px;
   margin-top: 5px;
@@ -52,9 +64,10 @@
 
 
 .contentArea{
-  /* border:1px solid  red; */
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
+  /* border: 1px solid red; */
+  display: block;
+  margin: 120px 250px 0px 250px;
+  /* height: 1200px; */
 }
 
 .sliderContainer{
@@ -68,7 +81,7 @@ h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: #505050;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 10px 0px;
   transform: translateX(-5px);
 }
 
@@ -78,6 +91,79 @@ h2 {
   font-weight: bold;
   color: #199FFF;
   padding-left: 0px;
+  margin-top: 0px;
+}
+
+p{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: #505050;
+  padding-left: 0px;
+  line-height: 150%;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.buttonContainer{
+  margin-top: 50px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.skills{
+  display: inline-block;
+  width: 130px;
+  margin-left: 0px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  /* border: 1px solid red; */
+}
+
+.jobList{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  list-style-position: outside;
+  color: #505050;
+  padding-left: 15px;
+  line-height: 150%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+#lastJob{
+  margin-bottom: 40px;
+}
+
+.noBullets{
+  list-style-type: none;
+  text-indent: -15px;
+}
+
+.skillsList{
+  margin: 0 auto;
+  list-style-type: none;
+  font-family: 'Roboto', sans serif;
+  font-size: 14px;
+  line-height: 150%;
+  color: #505050;
+  padding: 0px;
+}
+
+button{
+  height: 40px;
+  width: 120px;
+  color: white;
+  background-color: #f08f08;
+  display: inline-block;
+  border-radius: 7px;
+  text-align: center;
+  border: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 footer {
@@ -91,7 +177,6 @@ footer {
 }
 
 footer ul {
-  
   font-family: 'Roboto', sans-serif;
   color: #555555;
   align-items: center;
@@ -108,4 +193,40 @@ footer li {
   padding-left: 10px;
   padding-right: 10px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 840px){
+  .navGrid{
+    margin-left: 0px;
+    grid-template-columns: 100px auto;
+  }
+  .contentArea{
+    margin-left:100px;
+    margin-right:100px;
+  }
+  .skills{
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .navGrid{
+    margin-left: 0px;
+    margin-top: 1px;
+    height: 50px;
+    grid-template-columns: 70px auto;
+    grid-template-rows: 50px;
+  }
+  .contentArea{
+    margin: 60px 20px 0px 70px;
+  }
+  .skills{
+    margin-right: 20px;
+  }
+  .ld-logo{
+    height: 50px;
+  }
+nav{
+  height: 60px;
+  }
 }
