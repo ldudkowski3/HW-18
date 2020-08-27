@@ -62,7 +62,6 @@ nav{
   font-weight: bolder;
 }
 
-
 .contentArea{
   /* border: 1px solid red; */
   display: block;
@@ -70,10 +69,30 @@ nav{
   /* height: 1200px; */
 }
 
-.sliderContainer{
-  border: 1px solid red;
-  height: 300px;
-  width: auto;
+.uxWork{
+  display: flex;
+  margin-top: 20px;
+}
+
+.uxCard{
+  display: block;
+  width: 300px;
+  /* border: 1px solid gray; */
+  border-radius: 10px;
+  margin-right: 20px
+}
+/* #firstCard{
+  margin-left: 0px;
+} */
+
+.uxCard img{
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#lapLogo{
+  border: 1px solid gray;
 }
 
 h1 {
@@ -109,45 +128,6 @@ p{
   margin-bottom: 70px;
   display: flex;
   justify-content: center;
-}
-
-.skills{
-  display: inline-block;
-  width: 130px;
-  margin-left: 0px;
-  margin-right: 30px;
-  margin-bottom: 40px;
-  /* border: 1px solid red; */
-}
-
-.jobList{
-  font-size: 14px;
-  font-family: 'Roboto', sans-serif;
-  list-style-position: outside;
-  color: #505050;
-  padding-left: 15px;
-  line-height: 150%;
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
-
-#lastJob{
-  margin-bottom: 40px;
-}
-
-.noBullets{
-  list-style-type: none;
-  text-indent: -15px;
-}
-
-.skillsList{
-  margin: 0 auto;
-  list-style-type: none;
-  font-family: 'Roboto', sans serif;
-  font-size: 14px;
-  line-height: 150%;
-  color: #505050;
-  padding: 0px;
 }
 
 button{
