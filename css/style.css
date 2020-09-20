@@ -18,6 +18,11 @@ nav{
   padding: 5px;
 }
 
+.menuIcon{
+  display: none;
+  height: 18px;
+}
+
 .logo{
   /* border:1px solid  red; */
   grid-column: 1 / span 1;
@@ -71,7 +76,8 @@ nav{
 
 .uxWork{
   display: flex;
-  margin-top: 20px;
+  flex-direction: row;
+  margin-top: 30px;
 }
 
 .uxCard{
@@ -93,6 +99,7 @@ nav{
 
 #lapLogo{
   border: 1px solid gray;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -198,7 +205,7 @@ footer li {
     grid-template-rows: 50px;
   }
   .contentArea{
-    margin: 60px 20px 0px 70px;
+    margin: 70px 15px 0px 15px;
   }
   .skills{
     margin-right: 20px;
@@ -206,7 +213,31 @@ footer li {
   .ld-logo{
     height: 50px;
   }
-nav{
+  nav{
   height: 60px;
+  }
+  .uxCard {
+    width: 500px;
+    display: block;
+  }
+  h1{
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 501px){
+  .navList{
+    display: none;
+  }
+  .menuIcon{
+    display: block;
+  }
+  .uxCards{
+    width: 100%;
+    display: block;
+  }
+  
+  body{
+    background-color: #f08f08;
   }
 }
